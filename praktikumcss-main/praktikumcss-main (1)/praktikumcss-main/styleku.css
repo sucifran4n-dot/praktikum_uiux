@@ -1,0 +1,234 @@
+body {
+    background-color: beige;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    margin: 20px auto;
+    width: 90%;
+    color: black;
+}
+
+/* Bagian header */
+#header {
+    background-color: burlywood;
+    border: 3px solid white;
+    padding: 5px 15px;
+    text-align: center;
+}
+
+#header h1 {
+    color: blue;
+    font-size: 25px;
+    margin: 5px 0;
+}
+
+blockquote {
+    background-color: #ffcc00;
+    font-size: 11px;
+    padding: 5px;
+    margin: 5px 0;
+    color: black;
+}
+
+#soekarno {
+    font-weight: bold;
+}
+
+/* Menu navigasi */
+body > div:nth-of-type(2) {
+    text-align: center;
+}
+
+body > div:nth-of-type(2) ul {
+    list-style: none;
+    padding: 0;
+}
+
+body > div:nth-of-type(2) li {
+    display: inline-block;
+    margin: 5px;
+}
+
+a {
+    color: blue;
+    text-decoration: none;
+}
+
+a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+/* Gambar utama */
+.gambar {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.gambar img {
+    width: 150px;
+    height: 100px;
+    object-fit: cover;
+}
+
+/* Isi artikel */
+.isi {
+    text-align: justify;
+    line-height: 1.4;
+    color: black;
+    font-weight: normal;
+}
+
+.isi p:first-child::first-letter {
+    color: blue;
+    font-size: 40px;
+    float: left;
+    line-height: 0.8;
+    padding-right: 3px;
+}
+
+.jawa {
+    font-weight: bold;
+}
+
+/* Bagian profil */
+#profil {
+    margin-top: 15px;
+    text-align: justify;
+    color: black;
+    font-weight: normal;
+}
+
+#profil h3 {
+    font-size: 15px;
+    margin-bottom: 8px;
+    color: black;
+    font-weight: bold;
+}
+
+#profil ul {
+    padding-left: 25px;
+    color: black;
+    font-weight: normal;
+}
+
+#profil li {
+    margin-bottom: 8px;
+    color: black;
+    font-weight: normal;
+}
+
+/* Bagian budidaya */
+#beternak {
+    margin-top: 15px;
+    text-align: justify;
+    color: black;
+    font-weight: normal;
+}
+
+#beternak h3 {
+    font-size: 15px;
+    margin-bottom: 8px;
+    color: black;
+    font-weight: bold;
+}
+
+#beternak h4 {
+    font-size: 13px;
+    margin-bottom: 5px;
+    color: black;
+    font-weight: bold;
+}
+
+#beternak ol {
+    padding-left: 25px;
+}
+
+#beternak li {
+    margin-bottom: 8px;
+    color: black;
+    font-weight: normal;
+}
+
+#beternak p {
+    color: black;
+    font-weight: normal;
+    line-height: 1.4;
+}
+
+/* Koleksi gambar */
+.koleksi {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.koleksi img {
+    width: 23%;
+    height: 130px;
+    object-fit: cover;
+    border: 2px solid white;
+}
+
+/* Bagian promosi */
+.promo {
+    background-color: #f5deb3;
+    border: 2px solid white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 15px;
+    color: black;
+}
+
+.promo h2 {
+    color: black;
+    font-size: 20px;
+}
+
+.promo h3 {
+    color: black;
+    line-height: 1.6;
+}
+
+.promo h4 {
+    color: black;
+}
+
+.promo strong {
+    color: black;
+    font-size: 20px;
+}
+
+.promo del {
+    color: black;
+}
+
+#Wa {
+    color: black;
+    font-weight: bold;
+}
+
+.promo ol {
+    display: inline-block;
+    text-align: left;
+}
+
+.promo a {
+    color: black;
+}
+
+/* Tampilan layar kecil */
+@media (max-width: 600px) {
+    body {
+        width: 95%;
+        margin: 10px auto;
+    }
+
+    .gambar img {
+        width: 42%;
+        height: auto;
+    }
+
+    .koleksi img {
+        width: 45%;
+        height: auto;
+    }
+}

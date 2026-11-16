@@ -1,0 +1,88 @@
+body {
+            background-color: rgb(193, 224, 234);
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            padding: 10px 20px;
+        }
+        h1 {
+            text-align: center; color: rgb(25, 25 94);
+        }
+        p {
+            text-align: justify;
+            width: fit-content;
+        }
+        .khasiat {
+            background-color: bisque;
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+            color: white;
+            text-align: center;
+            padding: 2px 0 10px;
+        }
+        ol {
+            display: flex;
+            text-align: left;
+            .vit2 {
+                margin-top: 80px;
+                position: relative;
+                margin-left: -100px;
+            }
+        }
+        .center{
+            width: 200px;
+            height: 200px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        img {
+            border: 2px solid navy;
+            border-radius: 30px;
+        }
+        .foto {
+            background-color: black;
+        }
+        & img {
+            width: 23%;
+        }
+        .promo {
+                text-align: center;
+                color: red;
+            }
+            .cod {
+                width: fit-content;
+                & p{
+                    padding: 15px;
+                    background-color: aqua;
+                    border: 1px dotted red;
+                    text-align: center;
+                    font-weight: bold;
+                    color: blue;
+                }
+            }
+            #tombol {
+                background-color: rgb(213, 213, 23);
+                color: red;
+                border-color: #eee;
+            }
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                margin-bottom: 20px;
+            }
+            th,td {
+                font-size: large;
+                border: 1px solid black;
+                padding: 10px;
+                text-align: center;
+            }
+            th {
+                background-color: #5b9bd5;
+                color: white;
+            }
+            tr:nth-child(even){
+                background-color: #deeaf6;
+            }
+            tr:nth-child(odd){
+                background-color:white ;
+            }

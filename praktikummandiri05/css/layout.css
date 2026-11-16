@@ -1,0 +1,58 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* Sidebar */
+nav {
+  background-color: lightblue;
+  width: 200px;
+  padding: 20px;
+}
+
+/* Konten sebelah sidebar */
+.content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+/* Header */
+header {
+  background-color: bisque;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Article dan Aside */
+.row {
+  display: flex;
+  flex: 1;
+  min-height: 400px;
+}
+
+article {
+  background-color: lightgray;
+  flex: 3;
+  padding: 20px;
+}
+
+aside {
+  background-color: pink;
+  flex: 1;
+  padding: 20px;
+}
+
+/* Footer */
+footer {
+  background-color: bisque;
+  padding: 20px;
+  text-align: center;
+}

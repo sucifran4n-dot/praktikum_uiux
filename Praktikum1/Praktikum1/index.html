@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ORBIT CREW</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- ini bagian navbar --> 
+    <header class="site-header">
+        <nav class="navbar" aria-label="Navigasi utama">
+            <a class="brand" href="index.html">ORBIT CREW</a>
+            <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="navLinks">menu</button>
+
+            <div class="nav-link" id="navLinks">
+                <a href="index.html">Home</a>
+                <a href="team.html">Our Team</a>
+                <a href="learning.html">Learning Journey</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="hero-text">
+                <h1>Praktikum Web Kelasik 2026</h1>
+                <p>Kami merancang dan mengembangkan antarmuka website yang mantap sekali</p>
+                <a class="button" href="team.html">Kenali Tim Kami</a>
+            </div>
+            <img class="hero-image" src="assets/images/foto kelompok.jpg" alt="Foto Kelompok Orbit Crew">
+        </section>
+
+
+        <button type="button" id="helloButton">Klik Aku</button>
+        <p id="helloResult">belom ada pesanan</p>
+
+
+    </main>
+    <footer class="footer">2026 Orbit Crew. Dibuat untuk seru seruan aja</footer>
+
+    <script>
+    console.log("js berhasil jalankan");
+
+    const namaKelompok = "kelasik 2026";
+    const jumlahAnggota = 5;
+
+    console.log(namaKelompok, jumlahAnggota);
+
+    const helloButton = document.querySelector("#helloButton");
+    const helloResult = document.querySelector("#helloResult");
+
+    if (helloButton && helloResult) {
+        helloButton.addEventListener("click", () => {
+            helloResult.textContent = "Halo! Tombol berhasil diklik " + namaKelompok + "!";
+        });
+    }
+      const menuButton = document.querySelector(".menu-toggle");
+      const navLinks = document.querySelector("#navLinks");
+      
+        if (menuButton && navLinks) {
+                menuButton.addEventListener("click", () =>  {
+                    const isOpen = navLinks.classList.toggle("is-open");
+                    menuButton.setAttribute("aria-expanded", String(isOpen));
+                });
+      }
+    </script>
+</body>
+</html>
