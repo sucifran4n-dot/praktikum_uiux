@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>form select</h2>
+    <input type="text" id="name" placeholder="Masukkan Nama Anda">
+    <p id="pesan">silahkan isi nama anda</p>
+
+    <script>
+        const inputName = document.querySelector("#name")
+        const pesan = document.querySelector("#pesan")
+
+    function tampilkanPesan() {
+        const nama = inputName.value.trim()
+        pesan.textContent = nama === "" ? "silahkan isi nama anda" : `Halo ${nama}, Selamat belajar JavaScript`
+    }
+
+    inputName.addEventListener("input", tampilkanPesan)
+        
+    </script>
+</body>
+</html>

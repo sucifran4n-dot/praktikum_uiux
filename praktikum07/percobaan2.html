@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <h2>Menghitung Luas Persegi Panjang</h2>
+  <p id="luas"></p>
+  
+  <script>
+    function hitungLuasPersegiPanjang(p,l) {
+        return p * l;
+    }
+    
+    const luas = hitungLuasPersegiPanjang(5, 10);
+    document.getElementById("luas").textContent = `Luas persegi panjang adalah ${luas}.`;
+  </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tugas Mandiri</title>
+  </head>
+  <h2>Praktikum JavaScript</h2>
+  <p>Hasil didalam console (F12)</p>
+  <body>
+    <script>
+      const tugas = 80;
+      const uts = 70;
+      const uas = 90;
+
+      let rumusTugas = 30 / 100;
+      let rumusUts = 30 / 100;
+      let rumusUas = 40 / 100;
+
+      const nilaiAkhir = tugas * rumusTugas + uts * rumusUts + uas * rumusUas;
+
+      if (nilaiAkhir >= 60) {
+        console.log(`Lulus dengan nilai : ${nilaiAkhir}`);
+      } else {
+        console.log(`Tidak lulus dengan nilai : ${nilaiAkhir}`);
+      }
+    </script>
+  </body>
+</html>
